@@ -12,3 +12,4 @@ WIP
 ## Credits
 
 The skill is inspired and a basic reworking of Willem Ligtenberg's 'Flip a Coin' Skill. 
+# Skill-Arbitrator-of-Disputes
