@@ -1,8 +1,7 @@
 ## Skill-Abitrator-of-Disputes
-This skill lets Mycroft be an arbitrator between a dispute. 
+This skill is still a work in progress (WIP). It uses a very basic random event to let Mycroft arbitrate a dispute.
 
 ## Description
-The skill lets Mycroft make a random judgment to decide the issue. 
 
 ## Current state
 WIP
@@ -12,4 +11,3 @@ WIP
 ## Credits
 
 The skill is inspired and a basic reworking of Willem Ligtenberg's 'Flip a Coin' Skill. 
-# Skill-Arbitrator-of-Disputes
