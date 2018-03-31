@@ -34,6 +34,7 @@ from mycroft.util.log import getLogger
 from mycroft.util import play_mp3
 
 import random
+import time
 
 __author__ = 'Charles'
 
@@ -86,7 +87,7 @@ class ArbitratorSkill(MycroftSkill):
         self.speak_dialog('arbitration')
     #The intention is to insert a listening pause here in a time stamp log file
         self.speak_dialog('deliberating')
-        self.time.sleep(7)
+        time.sleep(7)
         self.process = play_mp3(join(dirname(__file__), "mp3", "gavel.mp3"))
         if bool(random.getrandbits(1)):
             self.process.wait()
@@ -97,6 +98,7 @@ class ArbitratorSkill(MycroftSkill):
 
     def handle_termination_intent(self, message):
         self.speak_dialog("termination")
+        self.stop()
 
     # The "stop" method defines what Mycroft does when told to stop during
     # the skill's execution.
