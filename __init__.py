@@ -58,7 +58,7 @@ class ArbitratorSkill(MycroftSkill):
     
     #Scene 1: Tony is invoked by saying "Tony, can you arbitrate this dispute?"
         decision_intent = IntentBuilder("DecisionIntent").\
-            require("DecisionKeyword").build()
+            require("DecisionKeyword").require("DisputeKeyword.voc").build()
         self.register_intent(decision_intent, self.handle_decision_intent)
     
     #Scene 2: Tony asks if he has the consent of all parties and that his judgments are final and unappealable. Response must be "yes"
